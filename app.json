@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "catscanner",
+    "name": "Escáner de Raza de Gatos",
     "slug": "catscanner",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/cat-scanner-icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/cat-scanner-splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,13 +17,38 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/cat-scanner-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.paulaymanu113.catscanner"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permite a ANALISIS DE RAZA DE GATOS acceder a su cámara"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permite a la aplicación elegir una foto para comenzar con la evaluación.",
+          "cameraPermission": "Permite a la aplicación capturar una foto para comenzar con la evaluación"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c25f27b9-96b9-45c9-98cf-8e915ac7a6a6"
+      }
     }
   }
 }
