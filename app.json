@@ -20,7 +20,7 @@
         "foregroundImage": "./assets/cat-scanner-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "versionCode": 2,
+      "versionCode": 3,
       "edgeToEdgeEnabled": true,
       "permissions": [
         "android.permission.CAMERA",
