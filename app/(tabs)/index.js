@@ -90,7 +90,7 @@ export default function Index() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        padding: 24,
+        padding: 20,
         backgroundColor: "#fff",
     },
     home: {

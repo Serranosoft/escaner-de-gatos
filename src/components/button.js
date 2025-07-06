@@ -5,7 +5,7 @@ export default function Button({ icon, text, onClick, disabled }) {
     return (
         <TouchableOpacity style={[styles.button, disabled && styles.disabled]} onPress={onClick} disabled={disabled}>
             {icon}
-            <Text style={[ui.h3, styles.buttonText]}>{text}</Text>
+            <Text style={ui.h3}>{text}</Text>
         </TouchableOpacity>
     )
 }
@@ -30,11 +30,6 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.23,
         shadowRadius: 2.62,
         elevation: 4,
-    },
-
-    buttonText: {
-        lineHeight: 30,
-        textAlign: "center"
     },
 
     disabled: {
